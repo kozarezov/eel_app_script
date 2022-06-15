@@ -1,0 +1,15 @@
+.app-content .page-description {
+    padding: 10px;
+}
+
+.app-content {
+    margin-top: 80px;
+}
+
+.card .card-header {
+    padding: 10px 30px 10px;
+}
+
+.card .card-body {
+    padding: 5px 30px;
+}
