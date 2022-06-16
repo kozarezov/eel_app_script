@@ -1,5 +1,10 @@
 .app-content .page-description {
     padding: 10px;
+    text-align: center;
+}
+
+.center {
+    text-align: center;
 }
 
 .app-content {
@@ -7,11 +12,14 @@
 }
 
 .card .card-header {
-    padding: 10px 30px 10px;
+    padding: 15px 30px 10px;
+    text-align: center;
+    padding-bottom: 20px;
 }
 
 .card .card-body {
     padding: 5px 30px;
+    text-align: center;
 }
 
 .power-switch-wr {
@@ -54,7 +62,7 @@
     position: absolute;
     z-index: 1;
     fill: none;
-    stroke: rgb(219, 12, 12);
+    stroke: rgb(88, 87, 87);
     stroke-width: 10px;
     stroke-linecap: round;
     stroke-linejoin: round;

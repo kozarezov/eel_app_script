@@ -5,14 +5,52 @@
 {% endblock %}
 
 {% block description %}
-    <h1 class="title has-text-centered">Meepo</h1>
+    <h1 class="title has-text-centered">Скрипты на Meepo</h1>
 {% endblock %}
 
 {% block content %}
-    <footer>
+<div class="card">
+    <div class="card-header">
+        <h5 class="card-title">Установите кнопки для запуска скриптов.</h5>
+    </div>
+    <div class="card-body">
+        <div class="row">
+            <div class="col">
+                <div class="input-group mb-3">
+                    <span class="input-group-text" id="basic-addon1">Кинуть сетку&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                    <input type="text" class="form-control" aria-describedby="basic-addon1">
+                </div>
+            </div>
+            <div class="col">
+                <div class="input-group mb-3">
+                    <span class="input-group-text" id="basic-addon2">Пуф выделенных Meepo</span>
+                    <input type="text" class="form-control" aria-describedby="basic-addon2">
+                </div>
+            </div>
+            <div class="col-sm-6">
+                <div class="input-group mb-3">
+                    <span class="input-group-text" id="basic-addon3">Комбо с Blink Dagger</span>
+                    <input type="text" class="form-control" aria-describedby="basic-addon3">
+                </div>
+            </div>
+            <div class="col-sm-6">
+                <div class="input-group mb-3">
+                    <span class="input-group-text" id="basic-addon4">Слот с Blink Dagger&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                    <select class="form-select" aria-label="Default select example">
+                        <option selected>---</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="3">4</option>
+                        <option value="3">5</option>
+                        <option value="3">6</option>
+                    </select>
+                </div>
+            </div>
+        </div>
         <div class="power-switch-wr">
             <div class="power-switch">
-                <input type="checkbox" />
+                <input type="checkbox" id="activate"/>
                 <div class="button">
                     <svg class="power-off">
                         <use xlink:href="#line" class="line" />
@@ -33,5 +71,25 @@
                 <circle cx="75" cy="80" r="35"/>
             </symbol>
         </svg>
-    </footer>
+        <div class="container">
+            <div class="row justify-content-md-center">
+                <div class="col-sm-7">
+                </div>
+                <div class="col-sm-5">
+                    <div class="input-group mb-3">
+                        <span class="input-group-text" id="basic-addon3">Вкл/вкл скрипт</span>
+                        <input type="text" class="form-control" aria-describedby="basic-addon3">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row justify-content-md-center">
+                <div class="col-sm-12">
+                    <button type="submit" id="index-btn" class="btn btn-outline-success">Сохранить</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
 {% endblock %}
