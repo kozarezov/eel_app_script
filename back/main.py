@@ -14,5 +14,5 @@ eel.start(
     'templates/index.html',
     jinja_templates='templates',
     mode="chrome",
-    size=(630, 760)
+    size=(650, 760)
 )
