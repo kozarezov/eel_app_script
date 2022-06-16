@@ -5,7 +5,11 @@ async function activate_script() {
 document.getElementById('activate').onclick = activate_script;
 
 async function get_key() {
-    var inputElements = document.getElementById('id1').value;
-    await eel.get_key(inputElements);
+    let inputElements = document.getElementsByClassName('form-control');
+    var lst = [];
+    for(var i=0; inputElements[i]; ++i){
+        lst.push(inputElements[i].value)
+    }
+    await eel.get_key(lst);
 }
-document.getElementById('setting-btn').onclick = get_key;
+document.getElementById('index-btn').onclick = get_key;

@@ -42,6 +42,7 @@ def set_key():
 
 @eel.expose
 def get_key(keys):
+    print('я тут')
     print(keys)
     
 
