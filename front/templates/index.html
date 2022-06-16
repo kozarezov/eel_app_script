@@ -9,5 +9,29 @@
 {% endblock %}
 
 {% block content %}
-    <span>Здесь будут функции скрипта</span>
+    <footer>
+        <div class="power-switch-wr">
+            <div class="power-switch">
+                <input type="checkbox" />
+                <div class="button">
+                    <svg class="power-off">
+                        <use xlink:href="#line" class="line" />
+                        <use xlink:href="#circle" class="circle" />
+                    </svg>
+                    <svg class="power-on">
+                        <use xlink:href="#line" class="line" />
+                        <use xlink:href="#circle" class="circle" />
+                    </svg>
+                </div>
+            </div>
+        </div>
+        <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
+            <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 150 150" id="line">
+                <line x1="75" y1="34" x2="75" y2="74"/>
+            </symbol>
+            <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 150 150" id="circle">
+                <circle cx="75" cy="80" r="35"/>
+            </symbol>
+        </svg>
+    </footer>
 {% endblock %}
