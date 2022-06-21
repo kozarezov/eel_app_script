@@ -41,11 +41,11 @@ class Settings(peewee.Model):
 
 
 class Script(peewee.Model):
-    net = peewee.CharField()
-    puf_choosen = peewee.CharField()
-    combo = peewee.CharField()
-    blink_slot = peewee.CharField()
-    activate = peewee.CharField()
+    net = peewee.CharField(default = '')
+    puf_choosen = peewee.CharField(default = '')
+    combo = peewee.CharField(default = '')
+    blink_slot = peewee.CharField(default = '')
+    activate = peewee.CharField(default = '')
 
     class Meta:
         database = db_script

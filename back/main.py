@@ -1,9 +1,8 @@
 import eel
 import keyboard
-import peewee
 import threading
 
-from model import Script, Settings
+from config_key import write_key, read_key
 
 
 RUN = False
@@ -32,18 +31,15 @@ def combo():
             grid_tab()
 
 @eel.expose
-def set_key():
-    while True:
-        event = keyboard.read_event()
-        if event.event_type == keyboard.KEY_DOWN:
-            print(event.name)
-            return event.name
-
+def set_key(keys):
+    write_key(keys)
 
 @eel.expose
-def get_key(keys):
-    print('я тут')
-    print(keys)
+def get_key(id):
+    lst = read_key()
+    return(str(lst[int(id)]))
+
+    
     
 
 @eel.expose
