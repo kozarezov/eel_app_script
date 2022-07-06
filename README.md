@@ -9,4 +9,4 @@ Eel
 Jinja2
 Keyboard
 
-<img src="https://github.com/kozarezov/eel_app_script/screenshot.png" width="800">  
+<img src="https://github.com/kozarezov/eel_app_script/blob/main/screenshot.png" width="800">  
