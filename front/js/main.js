@@ -4,12 +4,20 @@ async function activate_script() {
 }
 document.getElementById('activate').onclick = activate_script;
 
-async function get_key() {
+async function set_key() {
     let inputElements = document.getElementsByClassName('form-control');
     var lst = [];
     for(var i=0; inputElements[i]; ++i){
         lst.push(inputElements[i].value)
     }
-    await eel.get_key(lst);
+    await eel.set_key(lst);
 }
-document.getElementById('index-btn').onclick = get_key;
+document.getElementById('index-btn').onclick = set_key;
+
+async function get_key() {
+    let inputElements = document.getElementsByClassName('form-control');
+    for(var i=0; inputElements[i]; ++i){
+        inputElements[i].value = await eel.get_key(inputElements[i].id)();
+    }
+}
+document.body.onload = get_key;
